@@ -1,4 +1,4 @@
-export const message = {
+export default {
   login: {
     login: 'login',
     reset: 'reset',

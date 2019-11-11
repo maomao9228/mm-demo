@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <button>{{$t('message.login.login')}}</button>
+    <button>{{$t('login.login')}}</button>
+    <div>{{$t('login.reset')}}</div>
+    <button @click="change">切换</button>
   </div>
 </template>
 
@@ -14,8 +16,17 @@ export default {
     }
   },
   mounted () {
-    console.log(this.$i18n.locale)
-    console.log(this.$t('message.login.login'))
+  },
+
+  methods: {
+    change () {
+      console.log(this.$i18n.locale)
+      if (this.$i18n.locale === 'CN') {
+        this.$i18n.locale = 'EN'
+      } else {
+        this.$i18n.locale = 'CN'
+      }
+    }
   }
 }
 </script>
