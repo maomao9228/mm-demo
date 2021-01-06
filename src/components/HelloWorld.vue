@@ -1,9 +1,8 @@
 <template>
   <div class="hello">
-    <!-- <h1>{{ msg }}</h1> -->
-    <button>{{$t('login.login')}}</button>
+    <!-- <button>{{$t('login.login')}}</button>
     <div>{{$t('login.reset')}}</div>
-    <button @click="change">切换</button>
+    <button @click="change">切换</button> -->
   </div>
 </template>
 
