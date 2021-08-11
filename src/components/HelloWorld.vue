@@ -3,6 +3,7 @@
     <button>{{$t('login.login')}}</button>
     <div>{{$t('login.reset')}}</div>
     <button @click="change">切换</button>
+    <div> 这是一个demo </div>
   </div>
 </template>
 
